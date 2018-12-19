@@ -1,0 +1,12 @@
+<?php 
+
+include_once('config.php');
+
+
+$request = $_GET['r'];
+echo $request
+
+include_once(CLASSES.'Routeur.php');
+
+$routeur = new Routeur($request);
+$routeur->renderController();
